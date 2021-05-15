@@ -30,3 +30,7 @@
     margin-left: -17px;
     margin-right: -17px;;
 }
+
+.key.pressed, .key.flat.pressed { 
+    background-color: palevioletred;
+}

@@ -1,4 +1,4 @@
-const NOTES = ['c', 'df', 'd', 'ef', 'e', 'f', 'gf', 'g', 'af', 'a', 'bf', 'b', 'c', ]
+const NOTES = ['c', 'df', 'd', 'ef', 'e', 'f', 'gf', 'g', 'af', 'a', 'bf', 'b', 'C', ]
 
 const KEY_T0_NOTE = { 
     z: 'c',
@@ -12,7 +12,8 @@ const KEY_T0_NOTE = {
     h: 'af',
     n: 'a',
     j: 'bf',
-    m: 'c'
+    m: 'b',
+    l: 'C'
 }
 
 const NOTE_TO_KEY = {
@@ -27,7 +28,12 @@ const NOTE_TO_KEY = {
     af: 'h',  
     a: 'n',  
     bf: 'j',  
-    b: 'm'  
+    b: 'm',
+    C: 'l'  
 }
 
-export { NOTES, NOTE_TO_KEY, KEY_T0_NOTE };
+const VALID_KEYS = [
+    'z', 's', 'x', 'd', 'c', 'v', 'g', 'b', 'h', 'n', 'j', 'm', 'l'
+]
+
+export { NOTES, NOTE_TO_KEY, KEY_T0_NOTE, VALID_KEYS };
