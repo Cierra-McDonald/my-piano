@@ -4,5 +4,26 @@
     height: 300px;
     width: 60px;
     border: 2px solid black;
-    
+}
+
+.key-text { 
+    color: palevioletred;
+    margin-top: 240px;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    pointer-events: none;
+    background-color: powderblue;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.key.flat { 
+    background-color: black;
+    position: relative; 
+    height: 200px;
+    width: 30px;
+    z-index: 2;
+    margin-left: -17px;
+    margin-right: -17px;;
 }
