@@ -9,13 +9,16 @@
 .key-text { 
     color: palevioletred;
     margin-top: 240px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-weight: 800;
     font-size: 32px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     pointer-events: none;
     background-color: powderblue;
-    border-radius: 50%;
+    border-radius: 45%;
     text-align: center;
+    
 }
 
 .key.flat { 

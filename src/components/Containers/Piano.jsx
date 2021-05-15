@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Piano.css'
 import Keys from '../Presentation/Keys'
 import _ from 'lodash';
-import NOTES from '../global/Notes'
+import { NOTES } from '../global/Notes'
 
 export default class Piano extends Component {
     render() {
