@@ -5,7 +5,7 @@ import Piano from './components/Containers/Piano'
 function App() {
  
   return (
-    <div>
+    <div className="App">
       <h1> 🎶  My Little Piano  🎶 </h1>
       <Piano/>
       <br/>
