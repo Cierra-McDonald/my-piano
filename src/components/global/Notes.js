@@ -1,4 +1,4 @@
-const NOTES = ['c', 'df', 'd', 'ef', 'e', 'f', 'gf', 'g', 'af', 'a', 'bf', 'b', 'C', ]
+const NOTES = ['c', 'df', 'd', 'ef', 'e', 'f', 'gf', 'g', 'af', 'a', 'bf', 'b', 'o', ]
 
 const KEY_T0_NOTE = { 
     z: 'c',
@@ -13,7 +13,7 @@ const KEY_T0_NOTE = {
     n: 'a',
     j: 'bf',
     m: 'b',
-    l: 'C'
+    l: 'o'
 }
 
 const NOTE_TO_KEY = {
@@ -29,7 +29,7 @@ const NOTE_TO_KEY = {
     a: 'n',  
     bf: 'j',  
     b: 'm',
-    C: 'l'  
+    o: 'l'  
 }
 
 const VALID_KEYS = [
