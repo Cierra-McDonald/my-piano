@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import './Piano.css'
 import Keys from '../Presentation/Keys'
 import _ from 'lodash';
-import { NOTES, VALID_KEYS } from '../global/Notes'
+import { KEY_T0_NOTE, NOTES, VALID_KEYS } from '../global/Notes'
+
 
 class Piano extends Component {
 
@@ -24,12 +25,13 @@ class Piano extends Component {
         const updateKeyPress = [...this.state.pressedKeys];
         if(!updateKeyPress.includes(key) && VALID_KEYS.includes(key)) { 
             updateKeyPress.push(key);
-        } else {
-            alert('Oops! the key you pressed is not valid!')
-        }
+        } 
+ 
         this.setState({
             pressedKeys: updateKeyPress
         })
+        this.playNote(KEY_T0_NOTE[key]);
+
     }
 
 
@@ -43,6 +45,13 @@ class Piano extends Component {
 
     }
 
+    playNote = (note) => {
+        if (!_.isEmpty(note)) {
+          const noteAudio = new Audio(document.getElementById(note).src);
+          noteAudio.play();
+        }
+      }
+
     render() {
         const keys = _.map(NOTES, (note, index) => {
             return (
@@ -52,11 +61,24 @@ class Piano extends Component {
                     pressedKeys={this.state.pressedKeys}
                 />
                 );
-            }); 
+            });
+        const audioFiles = _.map(NOTES, (note, index) => { 
+            return (
+                <audio
+                    id={note}
+                    key={index}
+                    src={`../../notes/${note}.mp3`}/>
+            )
+        });
         return (
-                <div className="piano">
-                    {keys}
-                </div>
+        <div>
+            <div className="piano">
+                 {keys}
+            </div>
+            <div>
+                {audioFiles}
+            </div>
+        </div>
         )
     }
 }
