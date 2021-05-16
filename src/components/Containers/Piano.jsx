@@ -17,7 +17,6 @@ class Piano extends Component {
     }
 
     handleKeyDown = (e) => { 
-        console.log(e)
         if(e.repeat) { 
             return;
         }
