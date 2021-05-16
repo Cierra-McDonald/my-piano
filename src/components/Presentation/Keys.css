@@ -1,8 +1,8 @@
 .key { 
     color: pink;
     background-color: white;
-    height: 300px;
-    width: 60px;
+    height: 310px;
+    width: 70px;
     border: 2px solid black;
 }
 
@@ -24,7 +24,7 @@
 .key.flat { 
     background-color: black;
     position: relative; 
-    height: 200px;
+    height: 205px;
     width: 30px;
     z-index: 2;
     margin-left: -17px;

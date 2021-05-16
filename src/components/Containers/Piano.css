@@ -1,5 +1,7 @@
 .piano { 
     display: flex;
     flex-direction: row;
-    margin-left: 10%;
+    margin-top: 10%;
+    margin-left: 31%;
+    margin-right: 31%;
 }
