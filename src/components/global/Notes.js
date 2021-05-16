@@ -1,4 +1,4 @@
-const NOTES = ['c', 'df', 'd', 'ef', 'e', 'f', 'gf', 'g', 'af', 'a', 'bf', 'b', 'o', ]
+const NOTES = ['c', 'df', 'd', 'ef', 'e', 'f', 'gf', 'g', 'af', 'a', 'bf', 'b', ]
 
 const KEY_T0_NOTE = { 
     z: 'c',
