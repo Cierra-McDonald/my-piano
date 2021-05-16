@@ -6,7 +6,7 @@ function App() {
  
   return (
     <div>
-      <h1>My Little Piano</h1>
+      <h1> 🎶  My Little Piano  🎶 </h1>
       <Piano/>
       <br/>
       <br/>
